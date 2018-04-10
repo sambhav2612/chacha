@@ -7,7 +7,7 @@ const RootStack = StackNavigator(
     {
         Home: {
             screen: HomeScreen,
-        }
+        },
     },
     {
         initialRouteName: 'Home',
@@ -23,8 +23,4 @@ const RootStack = StackNavigator(
     }
 );
 
-export default class App extends React.Component {
-    render() {
-        return <RootStack />;
-    }
-};
+export default RootStack;

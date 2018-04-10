@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './js/App';
+import Home from './js/routes/home';
 
-AppRegistry.registerComponent('PGChacha', () => App);
+AppRegistry.registerComponent('PGChacha', () => Home);

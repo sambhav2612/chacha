@@ -6,12 +6,12 @@ const styles = StyleSheet.create ({
         flex: 1
     },
     appBar: {
-        height: '64px',
+        height: '64',
         justifyContent: 'space-around',
         alignItems: 'center'
     },
     layout: {
-        
+        flex: 1,
     },
     text: {
         color: '#000'
@@ -19,10 +19,6 @@ const styles = StyleSheet.create ({
 });
 
 export default class Home extends React.Component {
-    static navigationOptions = {
-        title: 'Home',
-    };
-
     render() {
         return(
             <ScrollView style={styles.container}>
