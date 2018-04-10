@@ -5,7 +5,10 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+    "clean:win": "cd android && gradlew.bat clean && cd ..",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "run:android:win": "npm run clean:win && npm run android"
   },
   "dependencies": {
     "react": "16.3.1",
